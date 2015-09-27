@@ -1,2 +1,2 @@
 # ShojiSplice
-Open source cripts for Shoji Splice.
+Open source scripts for Shoji Splice.
