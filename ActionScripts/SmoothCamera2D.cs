@@ -54,11 +54,9 @@ public class SmoothCamera2D : MonoBehaviour {
 	}
 
 	public void ChangeLag (float secondsTransition, float targetLagTime){
-		if (targetLagTime != initialLagTime) {
 			initialLagTime = lagTime;
 			StartCoroutine (FadeLag (secondsTransition, initialLagTime, targetLagTime));
 		}
-	}
 
 	IEnumerator FadeLag(float seconds, float initialValue, float finalValue){
 		

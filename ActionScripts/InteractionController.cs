@@ -196,7 +196,7 @@ public class InteractionController : MonoBehaviour {
 				
 			//Disable camera movement... Set target...
 			SmoothCamera2D smoothCamera2D = GameObject.FindGameObjectWithTag (Tags.mainCamera).GetComponent<SmoothCamera2D> ();
-			smoothCamera2D.ChangeLag(0.01f, 3f);
+			smoothCamera2D.lagTime = 3f;
 
 			if(cameraTargetPlayer){
 				smoothCamera2D.cursor = playerTransform.transform;

@@ -64,6 +64,7 @@ public class SceneFadeInOut : MonoBehaviour {
 	}
 	
 	void Start(){
+		smoothCamera2D.lagTime = 0.5f;
 		smoothCamera2D.ChangeLag (0.5f, 12f);
 
 		if(autoFindLocalObjectsContainerForPostClearAction){

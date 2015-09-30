@@ -272,7 +272,7 @@ public class NpcInteractionController : MonoBehaviour {
 			//Disable camera movement...
 			SmoothCamera2D smoothCamera2D = GameObject.FindGameObjectWithTag (Tags.mainCamera).GetComponent<SmoothCamera2D> ();
 			smoothCamera2D.cursor = transform;
-			smoothCamera2D.ChangeLag(0.01f, 3f);
+			smoothCamera2D.lagTime = 3f;
 
 			//Set bool to begin talking...
 			textLineTimer = 0f;
