@@ -143,11 +143,15 @@ public class EnemyStats : MonoBehaviour {
 				}
 			}
 			enemyIsAlive = false;
-			if(localSceneObjectsExist){
+			/*if(localSceneObjectsExist){
 				if(!ignoreEnemyForSceneClearing && gameObject.tag == Tags.enemy && !localScenePersistentGameObjects.isCleared){
 					sceneFadeInOut.remainingEnemiesList.Remove(gameObject);
 					sceneFadeInOut.SceneStatusCheckDelay(true);
 				}
+			}*/
+			if(sceneFadeInOut.remainingEnemiesList.Contains (gameObject)){
+				sceneFadeInOut.remainingEnemiesList.Remove(gameObject);
+				sceneFadeInOut.SceneStatusCheckDelay(true);
 			}
 			Destroy(gameObject);
 
