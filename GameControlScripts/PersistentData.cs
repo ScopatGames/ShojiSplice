@@ -38,6 +38,7 @@ public class PersistentData : MonoBehaviour {
 	public void Save () {
 		BinaryFormatter bf = new BinaryFormatter ();
 		FileStream file = File.Create (Application.persistentDataPath + "/playerinfo.dat");
+		//Debug.Log (Application.persistentDataPath);
 
 		PlayerData data = new PlayerData ();
 		data.chapsUn = chaptersUnlocked;
